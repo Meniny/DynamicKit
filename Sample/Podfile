@@ -1,0 +1,15 @@
+def lint()
+    use_frameworks!
+    pod 'SwiftLint'
+end
+
+def pods()
+  use_frameworks!
+  pod 'DynamicKit/UIKit', :path => "../"
+  lint()
+end
+
+target 'Sample' do
+  platform :ios, '9.0'
+  pods()
+end
