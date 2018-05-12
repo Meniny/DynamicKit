@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   # s.dependency "Jsonify"
 
-  s.default_subspecs = 'Core'
+  s.default_subspecs = 'Core', 'Eval', 'UIKit', 'Runtime', 'Mirror', 'HTTP', 'Boxing'
 
   # Core
   s.subspec 'Core' do |sp|
@@ -31,7 +31,6 @@ Pod::Spec.new do |s|
   # Eval
   s.subspec 'Eval' do |sp|
     sp.source_files  = 'DynamicKit/Eval/**/*.swift'
-    sp.dependency      'DynamicKit/Core'
   end
 
   # UIKit Extensions
@@ -43,12 +42,27 @@ Pod::Spec.new do |s|
   # Runtime Extensions
   s.subspec 'Runtime' do |sp|
     sp.source_files  = 'DynamicKit/Runtime/**/*.swift'
+  end
+
+  # Mirror Extensions
+  s.subspec 'Mirror' do |sp|
+    sp.source_files  = 'DynamicKit/Mirror/**/*.swift'
+  end
+
+  # Boxing Extensions
+  s.subspec 'Boxing' do |sp|
+    sp.source_files  = 'DynamicKit/Boxing/**/*.swift'
+  end
+
+  # HTTP Extensions
+  s.subspec 'HTTP' do |sp|
+    sp.source_files  = 'DynamicKit/HTTP/**/*.swift'
     sp.dependency      'DynamicKit/Core'
   end
 
   # REPL Extensions
   # s.subspec 'REPL' do |sp|
   #   sp.source_files  = 'DynamicKit/REPL/**/*.swift'
-  #   sp.dependency      'DynamicKit/Core'
+  #   sp.dependency      'DynamicKit/Eval'
   # end
 end

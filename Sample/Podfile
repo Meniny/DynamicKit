@@ -5,14 +5,11 @@ end
 
 def pods()
   use_frameworks!
-  pod 'DynamicKit/Core', :path => "../"
-  pod 'DynamicKit/Eval', :path => "../"
-  pod 'DynamicKit/UIKit', :path => "../"
-  pod 'DynamicKit/Runtime', :path => "../"
-  lint()
+  pod 'DynamicKit', :path => "../"
 end
 
 target 'Sample' do
   platform :ios, '9.0'
   pods()
+  # lint()
 end

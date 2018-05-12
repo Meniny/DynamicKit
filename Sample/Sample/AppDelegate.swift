@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import DynamicKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let podfile = DynamicKit.Podfile.generate(shared: [CocoaPod.init("EAKit"), CocoaPod.init("JustLayout")], targets: [DynamicKit.Podfile.XcodeTarget.init("Sample", platform: .ios("9.0"), dependency: [DynamicKit.Dependency.init(subpods: [], cocoapods: [CocoaPod.init("Leaf"), CocoaPod.init("DynamicKit")])]), DynamicKit.Podfile.XcodeTarget.init("SampleTest", platform: .ios("9.0"))], project: "Sample")
+        print(podfile)
         return true
     }
 

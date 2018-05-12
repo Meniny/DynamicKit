@@ -1,5 +1,6 @@
 
 import Foundation
+#if os(iOS)
 import UIKit
 
 internal class UIViewFrameLayoutData: NSObject {
@@ -145,3 +146,4 @@ internal class UIViewFrameLayoutData: NSObject {
         height = nil
     }
 }
+#endif

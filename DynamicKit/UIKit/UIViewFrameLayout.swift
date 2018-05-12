@@ -1,5 +1,6 @@
 
 import Foundation
+#if os(iOS)
 import UIKit
 
 @IBDesignable public extension UIView {
@@ -68,3 +69,4 @@ import UIKit
         }
     }
 }
+#endif

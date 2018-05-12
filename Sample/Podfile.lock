@@ -1,32 +1,32 @@
 PODS:
+  - DynamicKit (1.0.0):
+    - DynamicKit/Boxing (= 1.0.0)
+    - DynamicKit/Core (= 1.0.0)
+    - DynamicKit/Eval (= 1.0.0)
+    - DynamicKit/HTTP (= 1.0.0)
+    - DynamicKit/Mirror (= 1.0.0)
+    - DynamicKit/Runtime (= 1.0.0)
+    - DynamicKit/UIKit (= 1.0.0)
+  - DynamicKit/Boxing (1.0.0)
   - DynamicKit/Core (1.0.0)
-  - DynamicKit/Eval (1.0.0):
+  - DynamicKit/Eval (1.0.0)
+  - DynamicKit/HTTP (1.0.0):
     - DynamicKit/Core
-  - DynamicKit/Runtime (1.0.0):
-    - DynamicKit/Core
+  - DynamicKit/Mirror (1.0.0)
+  - DynamicKit/Runtime (1.0.0)
   - DynamicKit/UIKit (1.0.0):
     - DynamicKit/Eval
-  - SwiftLint (0.25.1)
 
 DEPENDENCIES:
-  - DynamicKit/Core (from `../`)
-  - DynamicKit/Eval (from `../`)
-  - DynamicKit/Runtime (from `../`)
-  - DynamicKit/UIKit (from `../`)
-  - SwiftLint
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - SwiftLint
+  - DynamicKit (from `../`)
 
 EXTERNAL SOURCES:
   DynamicKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DynamicKit: fd5af53ebf89ae17789752bf6b98863cdfb6c87f
-  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
+  DynamicKit: b44ff88f9a576a8babef3e79fccb5dcfcdc819d6
 
-PODFILE CHECKSUM: 1eb0a8342dba13eef62417b8677bcc40611193c9
+PODFILE CHECKSUM: bcb1db901b155869954d34280b546107c5e79a17
 
 COCOAPODS: 1.5.2

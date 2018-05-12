@@ -2,15 +2,16 @@
 :author: Elias Abel
 :author_esc: Elias%20Abel
 :mail: admin@meniny.cn
-:desc: a dynamic programming kit
+:desc: a Dynamic Programming Kit
 :icon: {name}.png
+:icon_w: 100%
 :version: 1.0.0
 :na: N/A
 :ios: 8.0
 :macos: 10.10
-:watchos: {2.0}
-:tvos: {9.0}
-:linux: ✔️
+:watchos: 2.0
+:tvos: 9.0
+:linux: {na}
 :xcode: 9.3
 :swift: 4.1
 :license: MIT
@@ -23,7 +24,7 @@ v{version}, 2018-05-12
 [subs="attributes"]
 ++++
 <p align="center">
-  <img src="./Assets/{icon}" alt="{name}" width="200px">
+  <img src="./Assets/{icon}" alt="{name}" width="{icon_w}">
   <br/><br/>
   <img alt="Author" src="https://img.shields.io/badge/author-{author_esc}-blue.svg">
   <img alt="EMail" src="https://img.shields.io/badge/mail-{mail}-orange.svg">
@@ -52,14 +53,14 @@ v{version}, 2018-05-12
 |===
 2+^m|Type 1+^m|Requirement
 
-1.5+^.^|Platform ^|iOS ^|{ios}+
+1.5+^.^|Platform ^|iOS ^|{ios}
 ^|macOS ^|{macos}
 ^|tvOS ^|{tvos}
 ^|watchOS ^|{watchos}
 ^|Linux ^|{linux}
 
-^|IDE ^|Xcode ^| {xcode}+
-^|Language ^|Swift ^| {swift}+
+^|IDE ^|Xcode ^| {xcode}
+^|Language ^|Swift ^| {swift}
 |===
 
 == 📲 Installation
@@ -71,20 +72,25 @@ v{version}, 2018-05-12
 [source, ruby, subs="verbatim,attributes"]
 ----
 use_frameworks!
-pod '{name}' # DynamicKit Core
+pod '{name}' # Contains all subpods
 ----
+
+==== SubPods
+
+* `{name}/Core`: Core stuffs
+* `{name}/Eval`: Expression evaluation
+* `{name}/UIKit`: UIKit improvements
+* `{name}/Runtime`: `Objective-C` runtime
+* `{name}/Mirror`: Mirror reflection
+* `{name}/Boxing`: Codable replacement
+* `{name}/HTTP`: Minimum HTTP request
+
+for example:
 
 [source, ruby, subs="verbatim,attributes"]
 ----
 use_frameworks!
-# or:
-pod '{name}/Eval' # DynamicKit for Eval
-
-# or:
-pod '{name}/UIKit' # DynamicKit for UIKit
-
-# or:
-pod '{name}/Runtime' # DynamicKit for Runtime
+pod '{name}/Eval'
 ----
 
 === Manually
