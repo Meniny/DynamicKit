@@ -5,7 +5,10 @@ end
 
 def pods()
   use_frameworks!
+  pod 'DynamicKit/Core', :path => "../"
+  pod 'DynamicKit/Eval', :path => "../"
   pod 'DynamicKit/UIKit', :path => "../"
+  pod 'DynamicKit/Runtime', :path => "../"
   lint()
 end
 

@@ -2,11 +2,16 @@ PODS:
   - DynamicKit/Core (1.0.0)
   - DynamicKit/Eval (1.0.0):
     - DynamicKit/Core
+  - DynamicKit/Runtime (1.0.0):
+    - DynamicKit/Core
   - DynamicKit/UIKit (1.0.0):
     - DynamicKit/Eval
   - SwiftLint (0.25.1)
 
 DEPENDENCIES:
+  - DynamicKit/Core (from `../`)
+  - DynamicKit/Eval (from `../`)
+  - DynamicKit/Runtime (from `../`)
   - DynamicKit/UIKit (from `../`)
   - SwiftLint
 
@@ -19,9 +24,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DynamicKit: 7f820cea4b7f2cbd77a4e052e80e372fcdd328dc
+  DynamicKit: fd5af53ebf89ae17789752bf6b98863cdfb6c87f
   SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
 
-PODFILE CHECKSUM: 74b82ace3472ee21c07af80dafe94ba4c5e511f9
+PODFILE CHECKSUM: 1eb0a8342dba13eef62417b8677bcc40611193c9
 
 COCOAPODS: 1.5.2

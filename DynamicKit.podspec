@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc        = true
   s.source              = { git: 'https://github.com/Meniny/DynamicKit.git', tag: s.version.to_s }
-  # s.source_files        = 'DynamicKit/**/*.swift'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
   s.swift_version       = '4.1'
 
@@ -39,6 +38,12 @@ Pod::Spec.new do |s|
   s.subspec 'UIKit' do |sp|
     sp.source_files  = 'DynamicKit/UIKit/**/*.swift'
     sp.dependency      'DynamicKit/Eval'
+  end
+
+  # Runtime Extensions
+  s.subspec 'Runtime' do |sp|
+    sp.source_files  = 'DynamicKit/Runtime/**/*.swift'
+    sp.dependency      'DynamicKit/Core'
   end
 
   # REPL Extensions

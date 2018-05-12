@@ -72,12 +72,19 @@ v{version}, 2018-05-12
 ----
 use_frameworks!
 pod '{name}' # DynamicKit Core
+----
 
+[source, ruby, subs="verbatim,attributes"]
+----
+use_frameworks!
 # or:
 pod '{name}/Eval' # DynamicKit for Eval
 
 # or:
 pod '{name}/UIKit' # DynamicKit for UIKit
+
+# or:
+pod '{name}/Runtime' # DynamicKit for Runtime
 ----
 
 === Manually
