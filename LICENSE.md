@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2018 Intelygenz <alejandro.ruperez@intelygenz.com>
+Copyright (c) 2018 Elias Abel <admin@meniny.cn>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
